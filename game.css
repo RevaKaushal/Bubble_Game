@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+    font-family:'Gilroy';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(197, 10, 175), pink) ;
+}
+#box{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    /* background-color: white; */
+    /* background: transparent white; */
+    border: 1px solid white;
+    backdrop-filter: blur(90px);
+}
+#box:hover{
+    transform: translateY(-1%);
+}
+#paneltop{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    height: 100px;
+    width: 100%;
+    /* background-color: rgb(243, 75, 125); */
+    padding: 0 30%;
+}
+.elem{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.elem h4{
+    font-size: x-large;
+    
+}
+.container{
+    background-color: aliceblue;
+    border-radius: 5px;
+    width: 60px; 
+    height: 40px; 
+    padding: 8px 20px;
+    margin: 6px;
+    color: black;
+    font-weight: 800;
+    font-size: x-large;
+}
+#panelbt{
+    width: 100%;
+    height: calc(100% - 100px) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  /* due to this the bubble will now show on next line */
+    gap:10px;
+    padding: 20px; /*better than margin to center div*/
+}
+.bubble{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(231, 64, 231);
+    font-size: large;
+    font-weight:bolder;
+    transition: all ease 0.5;
+}
+.bubble:hover{
+    background-color: rgb(113, 4, 95);
+    transform: translateY(-5%);
+    cursor:pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
